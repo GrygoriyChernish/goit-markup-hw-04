@@ -26,7 +26,7 @@
           </a>
           <ul class="mainNav_list list">
             <li class="mainNav__item">
-              <a href="./index.html" class="mainNav__link link current">Студия</a>
+              <a href="./index.html" class="mainNav__link mainNav__link--current link">Студия</a>
             </li>
             <li class="mainNav__item">
               <a href="./portfolio.html" class="mainNav__link link">Портфолио</a>
@@ -38,23 +38,9 @@
         </nav>
         <ul class="authNav list">
           <li class="authNav__item">
-            <img
-              src="./images/studio-images/header-logo/envelope.svg"
-              alt="Иконка конверта"
-              class="inline"
-              width="16"
-              height="11"
-            />
             <a href="mailto:info@devstudio.com" class="authNav__link link">info@devstudio.com</a>
           </li>
           <li class="authNav__item">
-            <img
-              src="./images/studio-images/header-logo/smartphone.svg"
-              alt="Иконка телефона"
-              class="inline"
-              width="10"
-              height="14"
-            />
             <a href="tel:+380961111111" class="authNav__link link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -74,55 +60,27 @@
       <!-- Секция "Преимущества" -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title visually-hidden">Преимущества</h2>
+          <h2 class="section__title visuallyHidden">Преимущества</h2>
           <ul class="featuresList list">
-            <li class="featuresList__item">
-              <img
-                src="./images/studio-images/advantages/antenna.svg"
-                alt="Иконка спутниковой антенны"
-                class="centering"
-                width="70"
-                height="70"
-              />
+            <li class="featuresList__item featuresList__item--iconAntenna">
               <h3 class="featuresList__title">Внимание к деталям</h3>
               <p class="featuresList__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="featuresList__item">
-              <img
-                src="./images/studio-images/advantages/clock.svg"
-                alt="Иконка часов"
-                class="centering"
-                width="70"
-                height="70"
-              />
+            <li class="featuresList__item featuresList__item--iconClock">
               <h3 class="featuresList__title">Пунктуальность</h3>
               <p class="featuresList__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="featuresList__item">
-              <img
-                src="./images/studio-images/advantages/diagram.svg"
-                alt="Иконка диаграммы"
-                class="centering"
-                width="70"
-                height="70"
-              />
+            <li class="featuresList__item featuresList__item--iconDiagram">
               <h3 class="featuresList__title">Планирование</h3>
               <p class="featuresList__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="featuresList__item">
-              <img
-                src="./images/studio-images/advantages/astronaut.svg"
-                alt="Иконка австронавта"
-                class="centering"
-                width="70"
-                height="70"
-              />
+            <li class="featuresList__item featuresList__item--iconAstronavt">
               <h3 class="featuresList__title">Современные технологии</h3>
               <p class="featuresList__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -132,7 +90,7 @@
         </div>
       </section>
       <!-- Секция "Чем мы занимаемся" -->
-      <section class="section">
+      <section class="section section--border">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="worksList list">
@@ -140,6 +98,7 @@
               <img
                 src="./images/studio-images/what-are-we-doing/desktop-app.jpg"
                 alt="Ноутбук с открытым приложением"
+                class="worksList__image"
                 width="370"
                 height="294"
               />
@@ -149,7 +108,8 @@
               <img
                 src="./images/studio-images/what-are-we-doing/mobile-app.jpg"
                 alt="Мобильный телефон"
-                width="380"
+                class="worksList__image"
+                width="370"
                 height="294"
               />
               <h3 class="worksList__title">Мобильные приложения</h3>
@@ -158,7 +118,8 @@
               <img
                 src="./images/studio-images/what-are-we-doing/design-decisions.jpg"
                 alt="Монитор компьютера с красивым дизайном"
-                width="380"
+                class="worksList__image"
+                width="370"
                 height="294"
               />
               <h3 class="worksList__title">Дизайнерские решения</h3>
@@ -167,7 +128,7 @@
         </div>
       </section>
       <!-- Секция "Наша команда" -->
-      <section class="section">
+      <section class="section section--grey">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="ourTeam list">
@@ -175,209 +136,221 @@
               <img
                 src="./images/studio-images/our-team/John-Smith.jpg"
                 alt="Фото Джона Смита"
-                width="278"
+                class="ourTeam__image"
+                width="270"
                 height="260"
               />
-              <h3 class="ourTeam__title">John Smith</h3>
-              <p class="ourTeam__text">Product Designer</p>
-              <ul class="social-network list">
-                <li class="item">
-                  <a href="https://www.instagram.com/?hl=ru">
-                    <img
-                      src="./images/studio-images/social-network/instagram.svg"
-                      alt="Иконка Инстаграмма"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://twitter.com/explore">
-                    <img
-                      src="./images/studio-images/social-network/twitter.svg"
-                      alt="Иконка Твитера"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://uk-ua.facebook.com/">
-                    <img
-                      src="./images/studio-images/social-network/facebook.svg"
-                      alt="Иконка Фейсбука"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://www.linkedin.com/">
-                    <img
-                      src="./images/studio-images/social-network/linkedin.svg"
-                      alt="Иконка Линкедин"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div class="ourTeam__meta">
+                <h3 class="ourTeam__title">John Smith</h3>
+                <p class="ourTeam__text">Product Designer</p>
+                <ul class="social-network list">
+                  <li class="item">
+                    <a href="https://www.instagram.com/?hl=ru">
+                      <img
+                        src="./images/studio-images/social-network/instagram.svg"
+                        alt="Иконка Инстаграмма"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://twitter.com/explore">
+                      <img
+                        src="./images/studio-images/social-network/twitter.svg"
+                        alt="Иконка Твитера"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://uk-ua.facebook.com/">
+                      <img
+                        src="./images/studio-images/social-network/facebook.svg"
+                        alt="Иконка Фейсбука"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://www.linkedin.com/">
+                      <img
+                        src="./images/studio-images/social-network/linkedin.svg"
+                        alt="Иконка Линкедин"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="ourTeam__item">
               <img
                 src="./images/studio-images/our-team/Marta-Stewart.jpg"
                 alt="Фото Марты Стюарт"
-                width="278"
+                class="ourTeam__image"
+                width="270"
                 height="260"
               />
-              <h3 class="ourTeam__title">Marta Stewart</h3>
-              <p class="ourTeam__text">Frontend Developer</p>
-              <ul class="social-network list">
-                <li class="item">
-                  <a href="https://www.instagram.com/?hl=ru">
-                    <img
-                      src="./images/studio-images/social-network/instagram.svg"
-                      alt="Иконка Инстаграмма"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://twitter.com/explore">
-                    <img
-                      src="./images/studio-images/social-network/twitter.svg"
-                      alt="Иконка Твитера"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://uk-ua.facebook.com/">
-                    <img
-                      src="./images/studio-images/social-network/facebook.svg"
-                      alt="Иконка Фейсбука"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://www.linkedin.com/">
-                    <img
-                      src="./images/studio-images/social-network/linkedin.svg"
-                      alt="Иконка Линкедин"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div class="ourTeam__meta">
+                <h3 class="ourTeam__title">Marta Stewart</h3>
+                <p class="ourTeam__text">Frontend Developer</p>
+                <ul class="social-network list">
+                  <li class="item">
+                    <a href="https://www.instagram.com/?hl=ru">
+                      <img
+                        src="./images/studio-images/social-network/instagram.svg"
+                        alt="Иконка Инстаграмма"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://twitter.com/explore">
+                      <img
+                        src="./images/studio-images/social-network/twitter.svg"
+                        alt="Иконка Твитера"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://uk-ua.facebook.com/">
+                      <img
+                        src="./images/studio-images/social-network/facebook.svg"
+                        alt="Иконка Фейсбука"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://www.linkedin.com/">
+                      <img
+                        src="./images/studio-images/social-network/linkedin.svg"
+                        alt="Иконка Линкедин"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="ourTeam__item">
               <img
                 src="./images/studio-images/our-team/Robert-Jakis.jpg"
                 alt="Фото Роберта Якиса"
-                width="278"
+                class="ourTeam__image"
+                width="270"
                 height="260"
               />
-              <h3 class="ourTeam__title">Robert Jakis</h3>
-              <p class="ourTeam__text">Marketing</p>
-              <ul class="social-network list">
-                <li class="item">
-                  <a href="https://www.instagram.com/?hl=ru">
-                    <img
-                      src="./images/studio-images/social-network/instagram.svg"
-                      alt="Иконка Инстаграмма"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://twitter.com/explore">
-                    <img
-                      src="./images/studio-images/social-network/twitter.svg"
-                      alt="Иконка Твитера"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://uk-ua.facebook.com/">
-                    <img
-                      src="./images/studio-images/social-network/facebook.svg"
-                      alt="Иконка Фейсбука"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://www.linkedin.com/">
-                    <img
-                      src="./images/studio-images/social-network/linkedin.svg"
-                      alt="Иконка Линкедин"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div class="ourTeam__meta">
+                <h3 class="ourTeam__title">Robert Jakis</h3>
+                <p class="ourTeam__text">Marketing</p>
+                <ul class="social-network list">
+                  <li class="item">
+                    <a href="https://www.instagram.com/?hl=ru">
+                      <img
+                        src="./images/studio-images/social-network/instagram.svg"
+                        alt="Иконка Инстаграмма"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://twitter.com/explore">
+                      <img
+                        src="./images/studio-images/social-network/twitter.svg"
+                        alt="Иконка Твитера"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://uk-ua.facebook.com/">
+                      <img
+                        src="./images/studio-images/social-network/facebook.svg"
+                        alt="Иконка Фейсбука"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://www.linkedin.com/">
+                      <img
+                        src="./images/studio-images/social-network/linkedin.svg"
+                        alt="Иконка Линкедин"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="ourTeam__item">
               <img
                 src="./images/studio-images/our-team/Martin-Doe.jpg"
                 alt="Фото Мартина Доя"
-                width="278"
+                class="ourTeam__image"
+                width="270"
                 height="260"
               />
-              <h3 class="ourTeam__title">Martin Doe</h3>
-              <p class="ourTeam__text">UI Designer</p>
-              <ul class="social-network list">
-                <li class="item">
-                  <a href="https://www.instagram.com/?hl=ru">
-                    <img
-                      src="./images/studio-images/social-network/instagram.svg"
-                      alt="Иконка Инстаграмма"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://twitter.com/explore">
-                    <img
-                      src="./images/studio-images/social-network/twitter.svg"
-                      alt="Иконка Твитера"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://uk-ua.facebook.com/">
-                    <img
-                      src="./images/studio-images/social-network/facebook.svg"
-                      alt="Иконка Фейсбука"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="https://www.linkedin.com/">
-                    <img
-                      src="./images/studio-images/social-network/linkedin.svg"
-                      alt="Иконка Линкедин"
-                      width="44"
-                      height="44"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div class="ourTeam__meta">
+                <h3 class="ourTeam__title">Martin Doe</h3>
+                <p class="ourTeam__text">UI Designer</p>
+                <ul class="social-network list">
+                  <li class="item">
+                    <a href="https://www.instagram.com/?hl=ru">
+                      <img
+                        src="./images/studio-images/social-network/instagram.svg"
+                        alt="Иконка Инстаграмма"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://twitter.com/explore">
+                      <img
+                        src="./images/studio-images/social-network/twitter.svg"
+                        alt="Иконка Твитера"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://uk-ua.facebook.com/">
+                      <img
+                        src="./images/studio-images/social-network/facebook.svg"
+                        alt="Иконка Фейсбука"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://www.linkedin.com/">
+                      <img
+                        src="./images/studio-images/social-network/linkedin.svg"
+                        alt="Иконка Линкедин"
+                        width="44"
+                        height="44"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -461,8 +434,8 @@
     <footer class="page-footer">
       <div class="footer-container">
         <div>
-          <a href="./index.html" class="footer-logo link">
-            <span class="logo-accent">Web</span>
+          <a href="./index.html" class="logo link">
+            <span class="logo__accent">Web</span>
             Studio
           </a>
           <address>
