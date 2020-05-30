@@ -10,7 +10,6 @@
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --border-color: #afb1b8;
-  --radio-button-bg-color: #f5f4fa;
 }
 
 body {
@@ -89,6 +88,8 @@ img {
 }
 /* Стили логотипа  */
 .logo {
+  display: block;
+
   font-family: var(--secondary-font);
   color: inherit;
   font-weight: 700;
@@ -98,6 +99,11 @@ img {
 
 .logo__accent {
   color: var(--acсent-color);
+}
+
+.logo--inverce {
+  color: var(--white-text-color);
+  margin-bottom: 10px;
 }
 
 /* Header */
@@ -154,6 +160,8 @@ img {
 }
 
 .authNav__link {
+  display: inline-flex;
+  align-items: center;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -168,6 +176,11 @@ img {
 
 .authNav__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.authNav_icon {
+  margin-right: 10px;
+  --color4: currentColor;
 }
 
 /* Секция Hero */
@@ -231,31 +244,16 @@ img {
   width: calc((100% - 90px) / 4);
 }
 
-.featuresList__item::before {
-  content: '';
-  display: block;
-  height: 120px;
+.featuresList__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
 
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--secondary-background-color);
-}
-
-.featuresList__item--iconAntenna::before {
-  background-image: url(../images/studio-images/advantages/antenna.svg);
-}
-
-.featuresList__item--iconClock::before {
-  background-image: url(../images/studio-images/advantages/clock.svg);
-}
-
-.featuresList__item--iconDiagram::before {
-  background-image: url(../images/studio-images/advantages/diagram.svg);
-}
-
-.featuresList__item--iconAstronavt::before {
-  background-image: url(../images/studio-images/advantages/astronaut.svg);
 }
 
 .featuresList__item:not(:nth-child(4n)) {
@@ -373,22 +371,51 @@ img {
   color: var(--secondary-text-color);
 }
 
-.social-network {
-  display: flex;
+.socialNetwork {
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
 }
 
-.social-network > .item:not(:last-child) {
+.socialNetwork__item:not(:last-child) {
   margin-right: 10px;
 }
 
+.socialNetwork__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.socialNetwork__link:hover,
+.socialNetwork__link:focus {
+  background-color: var(--acсent-color);
+  --color3: var(--white-text-color);
+}
+
+.socialNetwork__icon {
+  --color3: var(--border-color);
+}
+
+.socialNetwork__link--changeColor {
+  --color3: var(--white-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.socialNetwork__link--changeColor:hover,
+.socialNetwork__link--changeColor:focus {
+  background-color: var(--acсent-color);
+}
 /* Секция Наши клиенты */
 .regularCustomersList {
   display: flex;
   justify-content: space-between;
 }
 
-.border {
+.regularCustomersList__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,12 +425,17 @@ img {
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
+
+.regularCustomersList__link:hover {
+  border-color: var(--acсent-color);
+  --color3: var(--acсent-color);
+}
 /* Footer */
-.page-footer {
+.pageFooter {
   background-color: var(--footer-background-color);
 }
 
-.footer-container {
+.pageFooter__container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -414,28 +446,27 @@ img {
   padding-bottom: 28px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-logo {
-  display: block;
-  margin-bottom: 10px;
-
-  font-family: var(--secondary-font);
-  color: var(--white-text-color);
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-}
-
-address {
+.address {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   color: var(--white-text-color);
 }
+.addres__whiteAccent {
+  display: block;
+  margin-bottom: 9px;
+}
 
-.footer-accent {
+.address__greyAccent {
+  display: block;
   color: var(--footer-accent);
+}
+
+.address__greyAccent:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .white-accent {
@@ -528,6 +559,11 @@ address {
 
 .card__link {
   display: block;
+}
+
+.card__link:hover,
+.card__link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .card__meta {

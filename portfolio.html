@@ -38,24 +38,20 @@
         </nav>
         <ul class="authNav list">
           <li class="authNav__item">
-            <img
-              src="./images/studio-images/header-logo/envelope.svg"
-              alt="Иконка конверта"
-              class="inline"
-              width="16"
-              height="11"
-            />
-            <a href="mailto:info@devstudio.com" class="authNav__link link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="authNav__link link">
+              <svg class="authNav_icon" width="16" height="11">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="authNav__item">
-            <img
-              src="./images/studio-images/header-logo/smartphone.svg"
-              alt="Иконка телефона"
-              class="inline"
-              width="10"
-              height="14"
-            />
-            <a href="tel:+380961111111" class="authNav__link link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="authNav__link link">
+              <svg class="authNav_icon" width="10" height="15">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -266,54 +262,51 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="footer-container">
+    <footer class="pageFooter">
+      <div class="pageFooter__container">
         <div>
-          <a href="./index.html" class="footer-logo link"><span class="logo-accent">Web</span> Studio</a>
-          <address>
-            г. Киев, пр-т Леси Украинки, 26 <br />
-            <span class="footer-accent">info@example.com</span> <br />
-            <span class="footer-accent">+38 099 111 11 11</span>
+          <a href="./index.html" class="logo logo--inverce link">
+            <span class="logo__accent">Web</span>
+            Studio
+          </a>
+          <address class="address">
+            <span class="addres__whiteAccent">г. Киев, пр-т Леси Украинки, 26</span>
+
+            <span class="address__greyAccent">info@example.com</span>
+
+            <span class="address__greyAccent">+38 099 111 11 11</span>
           </address>
         </div>
         <div>
           <b class="white-accent">Присоединяйтесь</b>
-          <ul class="social-network list">
-            <li class="item">
-              <a href="https://www.instagram.com/?hl=ru"
-                ><img
-                  src="./images/studio-images/social-network/instagram.svg"
-                  alt="Иконка Инстаграмма"
-                  width="44"
-                  height="44"
-              /></a>
+          <ul class="socialNetwork list">
+            <li class="socialNetwork__item">
+              <a href="https://www.instagram.com/?hl=ru" class="socialNetwork__link socialNetwork__link--changeColor">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="https://twitter.com/explore"
-                ><img
-                  src="./images/studio-images/social-network/twitter.svg"
-                  alt="Иконка Твитера"
-                  width="44"
-                  height="44"
-              /></a>
+            <li class="socialNetwork__item">
+              <a href="https://twitter.com/explore" class="socialNetwork__link socialNetwork__link--changeColor">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="https://uk-ua.facebook.com/"
-                ><img
-                  src="./images/studio-images/social-network/facebook.svg"
-                  alt="Иконка Фейсбука"
-                  width="44"
-                  height="44"
-              /></a>
+            <li class="socialNetwork__item">
+              <a href="https://uk-ua.facebook.com/" class="socialNetwork__link socialNetwork__link--changeColor">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="https://www.linkedin.com/"
-                ><img
-                  src="./images/studio-images/social-network/linkedin.svg"
-                  alt="Иконка Линкедин"
-                  width="44"
-                  height="44"
-              /></a>
+            <li class="socialNetwork__item">
+              <a href="https://www.linkedin.com/" class="socialNetwork__link socialNetwork__link--changeColor">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
