@@ -24,7 +24,7 @@
             <span class="logo__accent">Web</span>
             Studio
           </a>
-          <ul class="mainNav_list list">
+          <ul class="mainNav__list list">
             <li class="mainNav__item">
               <a href="./index.html" class="mainNav__link link">Студия</a>
             </li>
@@ -39,7 +39,7 @@
         <ul class="authNav list">
           <li class="authNav__item">
             <a href="mailto:info@devstudio.com" class="authNav__link link">
-              <svg class="authNav_icon" width="16" height="11">
+              <svg class="authNav__icon" width="16" height="11">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -47,7 +47,7 @@
           </li>
           <li class="authNav__item">
             <a href="tel:+380961111111" class="authNav__link link">
-              <svg class="authNav_icon" width="10" height="15">
+              <svg class="authNav__icon" width="10" height="15">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -59,22 +59,22 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="visuallyHidden">Portfolio</h1>
+          <h1 class="section__title visuallyHidden">Portfolio</h1>
           <ul class="filter list">
             <li class="filter__item">
-              <button type="button" class="radioButton">Все</button>
+              <button type="button" class="filter__button">Все</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="radioButton">Веб-сайты</button>
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="radioButton">Приложения</button>
+              <button type="button" class="filter__button">Приложения</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="radioButton">Дизайн</button>
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="radioButton">Маркетинг</button>
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
           <ul class="cardSet list">
@@ -102,7 +102,7 @@
               <article class="card">
                 <a href="" class="card__link link"
                   ><img
-                    src="./images/portfolio-images/new-orlean-vs-gjlden-star.jpg"
+                    src="./images/portfolio-images/new-orlean-vs-golden-star.jpg"
                     alt="Два баскетболиста в прыжке борются за мяч"
                     width="380"
                     height="294"
@@ -270,7 +270,7 @@
             Studio
           </a>
           <address class="address">
-            <span class="addres__whiteAccent">г. Киев, пр-т Леси Украинки, 26</span>
+            <span class="address__whiteAccent">г. Киев, пр-т Леси Украинки, 26</span>
 
             <span class="address__greyAccent">info@example.com</span>
 
@@ -278,7 +278,7 @@
           </address>
         </div>
         <div>
-          <b class="white-accent">Присоединяйтесь</b>
+          <b class="whiteAccent">Присоединяйтесь</b>
           <ul class="socialNetwork list">
             <li class="socialNetwork__item">
               <a href="https://www.instagram.com/?hl=ru" class="socialNetwork__link socialNetwork__link--changeColor">
@@ -311,12 +311,17 @@
           </ul>
         </div>
         <div>
-          <form>
+          <form class="form">
             <label>
-              <span class="white-accent">Подпишитесь на рассылку</span>
-              <input type="email" name="email" class="input" placeholder="E-mail" required />
+              <span class="form__title whiteAccent">Подпишитесь на рассылку</span>
+              <input type="email" name="email" class="form__input" placeholder="E-mail" required />
             </label>
-            <button type="submit" class="button">Подписаться</button>
+            <button type="submit" class="button">
+              Подписаться
+              <svg width="24" height="24" class="button__icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
